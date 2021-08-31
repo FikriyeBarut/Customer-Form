@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Form</title>
+</head>
+<body>
+    <h1>Kullanıcı Anketi</h1>
+    <img src="https://listelist.com/wp-content/uploads/2020/02/el-s%C4%B1k%C4%B1sma-ana-gorsel-listelist-750x375.jpg" alt="memnuniyet">
+    <form name="Form" action="musteri.php" method="GET">
+        Ad-Soyad:
+        <input type="text" name="adsoyad" id="adsoyad" placeholder="Ad-Soyad giriniz." required autofocus>
+        <br>
+        Yaş:
+        <input type="number" name="yas" id="yas" placeholder="Yaşınız" required>
+        <br>
+        Meslek:
+        <select name="Meslek">
+            <option>Avukat</option>
+            <option>Doktor</option>
+            <option>Mühendis</option>
+            <option>Psikolog</option>
+            <option>Girişimci</option>
+            <option>Savcı</option>
+            <option>Öğretmen</option>
+            <option>Çalışmıyor</option>
+            <option selected>Diğer</option>
+        </select>
+        <br>
+        <input type="radio" name="medeni">Evli
+        <input type="radio" name="medeni">Bekar
+        <br>
+        <input type="radio" name="cinsiyet">Kadın
+        <input type="radio" name="cinsiyet">Erkek
+        <input type="radio" name="cinsiyet">Diğer
+        
+        
+        <h4>Ürünlerimizi tekrar satın alır mısınız?</h4>
+        <input type="radio" name="soru">Evet
+        <input type="radio" name="soru">Hayır
+        <h4>Ürünlerimizi tanıdıklarınıza tavsiye eder misiniz?</h4>
+        <input type="radio" name="soru">Evet
+        <input type="radio" name="soru">Hayır
+        <h4>Hangisi sizin için daha önemli?</h4>
+        <input type="checkbox" name="tavsiye" value="Konfor">Konfor
+        <input type="checkbox" name="tavsiye" value="Görüntü">Görüntü
+        <input type="checkbox" name="tavsiye" value="Ücret">Ücret
+        <input type="checkbox" name="tavsiye" value="Kalite">Kalite
+        <br>
+        <h4>Aldığınız ürünümüzün fiyatı sizce ideal mi?</h4>
+        <input type="radio" name="soru">Evet
+        <input type="radio" name="soru">Hayır
+        <h4>Firmamızdan nasıl haberiniz oldu?</h4>
+        <input type="radio" name="sec">İnstagram
+        <br>
+        <input type="radio" name="sec">Twitter
+        <br>
+        <input type="radio" name="sec">LinkedIn
+        <br>
+        <input type="radio" name="sec">Arkadaş tavsiyesi
+        <h4>Ürünün teslim hızı hakkında düşünceleriniz.</h4>
+        <input type="radio" name="tavsiye2">Çok iyi
+        <input type="radio" name="tavsiye2">İyi
+        <input type="radio" name="tavsiye2">Orta
+        <input type="radio" name="tavsiye2">Kötü
+        <h4>Firmamız ile iletişime geçme kolaylılığı.</h4>
+        <input type="radio" name="iletisim">Çok iyi
+        <input type="radio" name="iletisim">İyi
+        <input type="radio" name="iletisim">Orta
+        <input type="radio" name="iletisim">Kötü
+        <br>
+        <h4>Ürün yelpazemizi yeterli buluyor musunuz?</h4>
+        <input type="radio" name="urun">Çok iyi
+        <input type="radio" name="urun">İyi
+        <input type="radio" name="urun">Orta
+        <input type="radio" name="urun">Kötü
+
+        <h4>Firmamıza olan güveninizi değerlendiriniz.</h4>
+        <input type="radio" name="cevap">Memnunum
+        <input type="radio" name="cevap">Beklentilerime cevap veriyor.
+        <input type="radio" name="cevap">Geliştirilebilir.
+        <br>
+        <form name="onay" action="musteri.php" autocomplete="on">
+            Mesajınız: <textarea name="öneri" id="oneri" cols="30" rows="10"></textarea>
+            <br>
+            <input type="image" src="resimler/submit1.jpg">
+        </form>
+
+        
+
+
+        
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
